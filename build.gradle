@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    seleniumVersion = '3.141.59'
+    fluentleniumVersion = '4.3.1'
+    testcontainersVersion = '1.12.5'
+}
+
+dependencies {
+    testCompile "org.fluentlenium:fluentlenium-core:${fluentleniumVersion}"
+    testCompile "org.seleniumhq.selenium:selenium-java:${seleniumVersion}"
+    testCompile "org.testcontainers:selenium:${testcontainersVersion}"
+    testCompile "org.slf4j:slf4j-simple:1.7.25"
+}

@@ -1,5 +1,10 @@
 apply plugin: 'java'
 
+compileJava {
+    sourceCompatibility = 11
+    targetCompatibility = 11
+}
+
 repositories {
     mavenCentral()
 }
